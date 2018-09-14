@@ -1,0 +1,34 @@
+{
+  "name": "weather-app",
+  "version": "0.1.0",
+  "private": false,
+  "homepage": "https://blogscot.github.io/weather-app/",
+  "dependencies": {
+    "axios": "^0.17.1",
+    "babel-preset-es2015": "^6.24.1",
+    "prop-types": "^15.5.10",
+    "radium": "^0.19.4",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-scripts": "1.0.11",
+    "recompose": "^0.25.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "server": "json-server --watch -p 3001 server/db.json --static server/public",
+    "start-all": "npm-run-all --parallel server start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "babel-jest": "^20.0.3",
+    "eslint-plugin-prettier": "^2.2.0",
+    "gh-pages": "^1.1.0",
+    "npm-run-all": "^4.0.2",
+    "prettier": "^1.5.3"
+  }
+}
